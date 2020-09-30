@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invertir texto</title>
+</head>
+<body style="background: black;">
+    <input type ="text" id="texto">
+    <button style="background-color: aquamarine; position: fixed;" onclick="cambiarTexto();">Invertir Texto</button>
+    
+    <script>
+        function cambiarTexto(){
+        var texto = document.getElementById("texto");
+        texto.value = texto.value.split("").reverse().join("");
+        }
+    </script>
+</body>
+</html>
